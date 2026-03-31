@@ -24,17 +24,5 @@ h1{font-size:clamp(24px,8vw,48px);margin:0 0 10px}
 </div>`">Button</a>
 </div>
 
-<script>
-// Hidden easter egg: double-tap anywhere on the box
-let lastTap = 0;
-document.getElementById('mainBox').addEventListener('click', function(e) {
-  const currentTime = new Date().getTime();
-  const tapLength = currentTime - lastTap;
-  if(tapLength < 400 && tapLength > 0){
-    alert("🎉 Secret unlocked! The answer is always 42!");
-  }
-  lastTap = currentTime;
-});
-</script>
 </body>
 </html>
